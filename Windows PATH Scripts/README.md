@@ -7,3 +7,7 @@ This folder is for scripts that could be required to be executable from any dire
 - Click on the `Environment Variables` button in the menu that opens
 - Go to `System Variables` and double-click on the `PATH` field
 - Click `New` and enter the full path of the `Windows PATH Scripts` folder in this repository
+
+# List of Scripts
+- `helpscript` -> View a help list for all the custom scripts
+- `checkhealth` -> Run an SFC Scan and a DISM Cleanup
