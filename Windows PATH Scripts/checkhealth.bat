@@ -1,10 +1,9 @@
 @echo off
 
-::start
-echo Checking System health...
+:: Run SFC Scan
+sfc /scannow
 
-::sfcscannow
-sfc /scannow >> "logs\checkhealth.log"
+:: Run DISM Cleanup
+DISM /Online /Cleanup-Image /RestoreHealth
 
-::DISM
-DISM /Online /Cleanup-Image /RestoreHealth >> "logs\checkhealth.log"
+pause
